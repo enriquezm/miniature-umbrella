@@ -1,6 +1,6 @@
-const uid = require('./uid');
-const adjs = require('./adjs');
-const nouns = require('./nouns');
+const uid = require("./uid");
+const adjs = require("./adjs");
+const nouns = require("./nouns");
 
 function getRandomIndex(sizeOfArray) {
   return Math.floor(Math.random() * sizeOfArray);
@@ -17,9 +17,6 @@ const first = adjs[getRandomIndex(adjs.length)];
 const last = convertToCapitalCase(nouns[getRandomIndex(nouns.length)]);
 const generatedUid = uid(140);
 
-
 console.log(`New user generated: ${first}${last}`);
-console.log(`With mini_uID: ${generatedUid.slice(0,6)}`);
+console.log(`With mini_uID: ${generatedUid.slice(0, 6)}`);
 console.log(`long_uID: ${generatedUid}`);
-
-// console.log(nouns.includes('night'));
